@@ -1,0 +1,874 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: logo;
+    src: url(fontes/berkshire-swash.regular.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(fontes/TypeMachine.ttf);
+}
+
+/* body de cada tema de livro início */
+.bio{
+    background-image: linear-gradient( to bottom, #eadfb4, #deac80, #b99470);
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: 100% 1500px; 
+}
+
+.btok{
+    background-image: linear-gradient( to bottom, #bbe9ff, #bb9ab1, #987d9a);
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: 100% 1500px; 
+}
+
+.estu{
+    background-image: linear-gradient( to bottom, #e8efcf, #afd198, #b5c18e);
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: 100% 1500px; 
+}
+
+.fanta{
+    background-image: linear-gradient( to bottom, #93bfcf, #6096b4 , #51829b);
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: 100% 1500px; 
+}
+
+.infan{
+    background-image: linear-gradient( to bottom, #ffd966, #ffb996, #ffcf81 );
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: 100% 1500px; 
+}
+
+.juve{
+    background-image: linear-gradient( to bottom, #bfdfdf, #89a4c7, #b1bed5 );
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: 100% 1500px; 
+}
+
+.roma{
+    background-image: linear-gradient( to bottom, #f8c4b4, #e5707e, #bd574e );
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: 100% 1500px; 
+}
+
+.terror{
+    background-image: linear-gradient( to bottom, #e1f7f5, #301e67, #000000);
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: 100% 1500px; 
+}
+/* body de cada tema de livro fim */
+
+
+
+body{
+    background-image: linear-gradient( to bottom, #e1edf7, #69A8DB, #4288C6);
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: 100% 1500px;
+}
+
+/* heder do início*/
+header {
+    background-color: #89BC42;
+    box-shadow: 0 0 20px 8px #442803;
+    border-bottom: #442803 solid 5px;
+    position: relative;
+    padding-left: 3%;
+    padding-right: 90%;
+    padding-bottom: 9%;
+    transition: background 1s;
+}
+
+a{
+    font-family: texto;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d2dac7;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.logoimg2 {
+    width: 100px;
+    position: absolute;
+    left: 46%;
+    top: -5%;
+    margin-top: 10px;
+}
+
+h1 {
+    cursor: default;
+    padding: 2%;
+    padding-top: 3%;
+    background-image: url(images/imglogo.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 0 5px;
+    position: absolute;
+    top: -20%;
+    left: 5%;
+    font-size: 3em;
+    color: #104710;
+    font-family: logo;
+}
+
+.sobre{
+    position: absolute;
+    color: #000000;
+    top: 63.5%;
+    font-size: 30px;
+    left: 30%;
+}
+
+.inic {        
+    position: absolute;
+    left: 46.5%; 
+    font-size: 30px;
+    top: 60%;
+    color:#000000;
+    font-family: texto;                                                                   
+}
+
+.catal {
+    position: absolute;
+    font-size: 30px;
+    top: 63.5%;
+    right: 33.5%;
+    color: #000000;
+}
+
+.toggle-label {
+    right: 7%;
+    top: 20%;
+    width: 10px;
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    top: 3%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/126/824/small/yellow-moon-sticker-free-png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    transition: background 1s;
+}
+
+.toggle-btn:checked+.toggle-label:before {
+    background-image: url(https://png.pngtree.com/png-clipart/20221229/original/pngtree-icon-of-sun-png-image_8823429.png);
+    transition: background 1s;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55px;
+}
+
+.toggle-btn {
+    display: none;
+}
+
+.dark-mode {
+    transition: background 1s;
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p1/2402439-noite-colorido-estrelado-ceu-fundo-gratis-vetor.jpg);
+    background-size: 100%;
+    background-position: 0 50px;
+}
+
+/* heder fim */
+
+
+/* capas dos livros  início*/
+.liv1{
+    width: 11.5%;
+    height: 250px;
+    position: absolute;
+    left: 12.3%;
+    top: 25%;
+    border: #73482F solid 3px;
+    border-radius: 5%;
+}
+
+.liv2{
+    width: 11.5%;
+    height: 250px;
+    position: absolute;
+    left: 28%;
+    top: 25%;
+    border: #73482F solid 3px;
+    border-radius: 5%;
+}
+
+.liv3{
+    width: 11.5%;
+    height: 250px;
+    position: absolute;
+    left: 44%;
+    top: 25%;
+    border: #73482F solid 3px;
+    border-radius: 5%;
+}
+
+.liv4{
+    width: 11.5%;
+    height: 250px;
+    position: absolute;
+    left: 60%;
+    top: 25%;
+    border: #73482F solid 3px;
+    border-radius: 5%;
+}
+
+.liv5{
+    width: 11.5%;
+    height: 250px;
+    position: absolute;
+    left: 76%;
+    top: 25%;
+    border: #73482F solid 3px;
+    border-radius: 5%;
+}
+
+.liv6{
+    width: 11.5%;
+    height: 250px;
+    position: absolute;
+    left: 20%;
+    top: 85%;
+    border: #73482F solid 3px;
+    border-radius: 5%;
+}
+
+.liv7{
+    width: 11.5%;
+    height: 250px;
+    position: absolute;
+    left: 36%;
+    top: 85%;
+    border: #73482F solid 3px;
+    border-radius: 5%;
+}
+
+.liv8{
+    width: 11.5%;
+    height: 250px;
+    position: absolute;
+    left: 52%;
+    top: 85%;
+    border: #73482F solid 3px;
+    border-radius: 5%;
+}
+
+.liv9{
+    width: 11.5%;
+    height: 250px;
+    position: absolute;
+    left: 68%;
+    top: 85%;
+    border: #73482F solid 3px;
+    border-radius: 5%;
+}
+
+/* capas dos livros fim*/
+
+
+.btn:active{
+    transform: translateY(3px);
+}
+
+/* links para as sinopses dos livros início */
+.sab1{
+    position: absolute;
+    top: 66%;
+    color: #edf3e5;
+    font-size: 30px;
+    left: 12.3%;
+    background-color: #73482F; 
+    border-radius: 12%;
+    border: #89BC42 solid 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+.sab2{
+    background-color: #104710;
+    color: #edf3e5;
+    position: absolute;
+    top: 66%;
+    font-size: 30px;
+    left: 28%;
+    background-color: #73482F; 
+    border-radius: 12%;
+    border: #89BC42 solid 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.sab3{
+    background-color: #104710;
+    color: #f8ffee;
+    position: absolute;
+    top: 66%;
+    font-size: 30px;
+    left: 44%;
+    border-radius: 12%;
+    border: #89BC42 solid 2px;
+    background-color: #73482F; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.sab4{
+    background-color: #104710;
+    color: #e7e7e7;
+    position: absolute;
+    top: 66%;
+    font-size: 30px;
+    left: 60%;
+    background-color: #73482F;
+    border-radius: 12%;
+    border: #89BC42 solid 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.sab5{
+    background-color: #104710;
+    color: #f1f1f1;
+    position: absolute;
+    top: 66%;
+    font-size: 30px;
+    left: 76%;
+    background-color: #73482F; 
+    border-radius: 12%;
+    border: #89BC42 solid 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.sab6{
+    position: absolute;
+    top: 126%;
+    font-size: 30px;
+    left: 20%;
+    background-color: #73482F; 
+    border-radius: 12%;
+    border: #89BC42 solid 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.sab7{
+    position: absolute;
+    top: 126%;
+    font-size: 30px;
+    left: 36%;
+    background-color: #73482F; 
+    border-radius: 12%;
+    border: #89BC42 solid 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.sab8{
+    position: absolute;
+    top: 126%;
+    font-size: 30px;
+    left: 52%;
+    background-color: #73482F; 
+    border-radius: 12%;
+    border: #89BC42 solid 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.sab9{
+    background-color: #104710;
+    color: #89BC42;
+    position: absolute;
+    top: 126%;
+    font-size: 30px;
+    left: 68%;
+    background-color: #73482F; 
+    border-radius: 12%;
+    border: #89BC42 solid 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/* links para as sinopses dos livros fim */
+
+@media all and (max-width: 560px) {
+
+        body{
+            background-size: 100% 1800px;
+        }
+
+        header{
+            padding-bottom: 120px;
+        }
+
+        h1{
+            z-index: 110;
+            font-size: 2em;
+            top: -48%;
+            background-size: 95px;
+            left: -3%;
+            background-position:  16px 38px;
+            padding: 10%;
+            padding-top: 15%;
+        }
+
+        .logoimg2{
+            left: 5%;
+            top: 200%;
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        } 
+
+        .logoimg3{
+            position: absolute;
+            top: 100%;
+            left: 5%;
+        }
+    
+        .logoimg4{
+            top: 100%;
+            left: 5%;
+        }
+        
+        .sup{
+            font-size: 1.2em;
+            left: 45%;
+            top: 42%;  
+        }
+    
+        .bosque{
+            font-size: 1.2em;
+            left: 56%;
+            top: 75%;
+        }
+
+        .catal{
+            left: 75%;
+            font-size: 1.2em;
+            top: 75%;
+        }
+
+        .sobre{
+            font-size: 1.2em;
+            top: 77%;
+            left: 34%;
+        }
+
+        .inic{
+            font-size: 1.2em;
+            top: 75%;
+            left: 19%;
+        }
+
+        .liv1{
+            width: 27%;
+            height: 23%;
+            left: 3%;
+        }
+
+        .liv2{
+            width: 27%;
+            height: 23%;
+            left: 35.6%;
+        }
+
+        .liv3{
+            width: 27%;
+            height: 23%;
+            left: 68%;
+        }
+
+        .liv4{
+            width: 27%;
+            height: 23%;
+            top: 61%;
+            left: 3%;
+        }
+
+        .liv5{
+            width: 27%;
+            height: 23%;
+            top: 61%;
+            left: 35.6%;
+        }
+
+        .liv6{
+            width: 27%;
+            height: 23%;
+            top: 61%;
+            left: 68%;
+        }
+
+        .liv7{
+            width: 27%;
+            height: 22%;
+            top: 98%;
+            left: 3%;
+        }
+
+        .liv8{
+            width: 27%;
+            height: 22%;
+            top: 98%;
+            left: 35.6%;
+        }
+
+        .liv9{
+            width: 27%;
+            height: 22%;
+            top: 98%;
+            left: 68%;
+        }
+
+        .sab1{
+            top: 51%;
+            width: 10%;
+            left: 3%;
+        }
+
+        .sab2{
+            top: 51%;
+            width: 10%;
+            left: 36%;
+        }
+
+        .sab3{
+            top: 51%;
+            width: 10%;
+            left: 68%;
+        }
+
+        .sab4{
+            top: 87%;
+            width: 10%;
+            left: 6%;
+        }
+
+        .sab5{
+            top: 87%;
+            width: 10%;
+            left: 36%;
+        }
+
+        .sab6{
+            top: 87%;
+            width: 10%;
+            left: 68%;
+        }
+
+        .sab7{
+            top: 123%;
+            width: 10%;
+            left: 3%;
+        }
+        
+        .sab8{
+            top: 123%;
+            width: 10%;
+            left: 36%;
+        }
+
+        .sab9{
+            top: 123%;
+            width: 10%;
+            left: 68%; 
+        }
+
+        .btn{
+            padding: 0%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            height: auto;
+            width: 27%;
+        } 
+
+         /* FOOTER */
+
+        .rodape{
+
+            header{
+                padding-bottom: 120px;
+            }
+    
+            h1{
+                z-index: 110;
+                font-size: 1.9em;
+                top: -29%;
+                background-size: 100%;
+                left: -3%;
+                background-position:  16px 18px;
+                padding: 10%;
+                padding-top: 15%;
+            }
+    
+            .logoimg2{
+                left: 5%;
+                top: 200%;
+                -moz-transform: scaleX(-1);
+                -o-transform: scaleX(-1);
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            } 
+    
+            .catal{
+                left: 75%;
+                font-size: 1.2em;
+                top: 75%;
+            }
+    
+            .sobre{
+                font-size: 1.2em;
+                top: 77%;
+                left: 34%;
+            }
+    
+            .inic{
+                font-size: 1.2em;
+                top: 75%;
+                left: 19%;
+            }
+
+        }
+}
+
+.log{
+    margin-left: 45px;
+}
+
+.logoimg3{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 163%;
+    left: 20%;
+}
+
+.logoimg4{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 155%;
+    left: 58%;
+}
+
+.poli2 {
+    margin-left: -50px;
+    font-style: titulo;
+    font-size: 130%;
+    max-width: 220px;
+}
+
+
+.rodape{
+    border-top: #89BC42 solid 5px;
+    background-color: #73482F;
+    color: white;
+    height: 380px;
+    width: 100%;
+    font-size: 14px;
+    font-family: texto;
+    margin-top: 800px;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: white;  
+    font-size: 20px;
+}
+
+.rodape p{
+    margin-bottom: 5px;
+}
+
+
+
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+    margin-left: 60px;
+}
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+
+.rodape-direitos{
+    width: calc(100% - 1px);
+    background-color: #4e2f1e ;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+.book {
+    padding: 25px;
+    padding-top: 40px;
+    background-image: url(images/footerlogo.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: -5px 5px;
+    font-family: logo;
+    font-size: 3em;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+/* mobile */
+ @media (max-width: 560px) {
+
+    .book{
+        margin-top: -20%;
+        margin-left: -20%;
+    }
+
+    .rodape-div-2{
+        margin-top: 15%;
+        margin-left: -95%;
+        font-size: 0.9em;
+    }
+
+    .rodape-div-3{
+        margin-top: 15%;
+        margin-left: 5%;
+        font-size: 1.2em;
+    }
+
+    .logoimg3{
+        margin-top: -42%;
+        margin-left: 21%;
+    }
+    .logoimg4{
+        margin-top: -500%;
+        margin-left: 15%;
+    }
+
+    .rodape-div-4{
+        margin-top: 10%;
+        margin-left: 6%;
+        font-size: 1.1em;
+    }
+
+    .desen{
+        font-size: 75%;
+        }
+
+    .rodape-div{
+        padding: 60px 0px 40px 0px;
+        margin-top: 1%;
+    }
+
+    .rodape{
+        margin-top: 230%;
+        height: 500px;
+    }
+
+    .rodape-direitos{
+        margin-top: -7.1%;
+    }
+}   

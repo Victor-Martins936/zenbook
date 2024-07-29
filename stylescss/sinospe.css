@@ -1,0 +1,671 @@
+@charset "utf-8";
+@font-face {
+    font-family: logo;
+    src: url(fontes/berkshire-swash.regular.ttf);
+}
+
+@font-face {
+    font-family: font1;
+    src: url(fontes/KGWhattheTeacherWants.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(/fontes/TypeMachine.ttf);
+}
+
+@font-face {
+    font-family: titulo;
+    src: url(fontes/TypeMachine.ttf);
+}
+body{
+    transition: background 1s;
+    background-image: linear-gradient(to bottom, #bce1ff, #69A8DB, #4288C6);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-mode {
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p1/2402439-noite-colorido-estrelado-ceu-fundo-gratis-vetor.jpg);
+    background-size: 300% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/* inicio do header */
+header {
+    z-index: 100;
+    background-color: #89BC42;
+    border-bottom: #442803 solid 5px;
+    box-shadow: 0 0 20px 8px #442803;
+    position: relative;
+    padding-left: 3%;
+    padding-right: 90%;
+    padding-bottom: 8%;
+    transition: background 1s;
+}
+
+.dark-mode header {
+    background-color: #2d6b35;
+    border-bottom: #442803 solid 5px;
+    box-shadow: 0 0 20px 8px #442803;
+}
+
+h1 {
+    transition: background 1s;
+    cursor: default;
+    padding: 2%;
+    padding-top: 3%;
+    background-image: url(images/imglogo.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 0 5px;
+    position: absolute;
+    top: -30%;
+    left: 40px;
+    font-size: 3em;
+    color: #104710;
+    font-family: logo;
+}
+
+.dark-mode h1 {
+    background-image: url(images/dmlogo.png);
+    color: #89bc42;
+    background-size: 100px 105px;
+    background-position: 0 5px;
+}
+
+.dark-mode h2{
+    color: #ddda37;
+}
+
+.logoimg2 {
+    position: absolute;
+    width: 120px;
+    left: 46%;
+    top: -5%;
+    z-index: 100;
+}
+
+.inicio {
+    transition: 0.5s;
+    position: absolute;
+    left: 33%;
+    font-size: 30px;
+    top: 63%;
+    color: #000000;
+}
+
+.dark-mode .inicio {
+    color: #d2dac7;
+}
+
+.sobre {
+    transition: 0.5s;
+    position: absolute;
+    left: 44%;
+    font-size: 30px;
+    top: 60%;
+    color: #000000;
+}
+
+.dark-mode .sobre {
+    color: #d2dac7;
+}
+
+.dark-mode .bosque {
+    color: #d2dac7;
+}
+
+
+.catal {
+    position: absolute;
+    font-size: 30px;
+    top: 63%;
+    right: 32%;
+    color: #000000;
+}
+
+.dark-mode .catal {
+    color: #d2dac7;
+}
+
+
+a {
+    text-decoration: none;
+    position: absolute;
+    font-size: 1.5em;
+    font-family: titulo;
+}
+
+a:hover {
+    color: #d2dac7;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+.toggle-label {
+    right: 7%;
+    top: 20%;
+    width: 10px;
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    top: 3%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/126/824/small/yellow-moon-sticker-free-png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    transition: background 1s;
+}
+
+.toggle-btn:checked+.toggle-label:before {
+    background-image: url(https://png.pngtree.com/png-clipart/20221229/original/pngtree-icon-of-sun-png-image_8823429.png);
+    transition: background 1s;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55px;
+}
+
+.toggle-btn {
+    display: none;
+}
+
+/*....final header...*/
+
+
+main{
+    margin-top: 13pc;
+}
+
+.card-livro{
+    background-color: #4c9e15;
+    height: 400px;
+    margin-left: 200px;
+    width: 900px;
+    border-radius: 10px;
+    border: solid #582208 5px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 25px 2px;
+}
+
+.card-livrot{
+    background-color: #4c9e15;
+    height: 650px;
+    margin-left: 200px;
+    width: 900px;
+    border-radius: 10px;
+    border: solid #582208 5px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 25px 2px;
+}
+
+.card-livrob{
+    background-color: #4c9e15;
+    height: 450px;
+    margin-left: 200px;
+    width: 900px;
+    border-radius: 10px;
+    border: solid #582208 5px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 25px 2px;
+}
+
+.card-livroc{
+    background-color: #4c9e15;
+    height: 680px;
+    margin-left: 200px;
+    width: 900px;
+    border-radius: 10px;
+    border: solid #582208 5px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 25px 2px;
+}
+
+
+.livro-text{
+    padding: 40px;
+    display: flex;
+}
+
+.livro-text img{
+    height: 290px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 3px;
+}
+
+.livro-text p{
+    color: #2b1902;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-livro h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+
+.text-livro h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    margin-left: 30px;
+}
+
+.text-livro h3, p{
+    margin-left: 30px;
+}
+
+p:hover{
+    transition: transform 0.5s;
+  }
+
+.text-livro p:hover {
+    transform: scale(1.4);
+    background-color: #4c9e15;
+    padding: 3px;
+    border-radius: 4px;
+    border: solid;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .card-livro{
+        height: 480px;
+    }
+
+    .card-livro{
+        margin-left: 35px;
+    }
+    .card-livro{
+        width: calc(100% - 90px);
+        padding: 10px;
+    }
+
+    .livro-text img{
+        height: 190px;
+        margin-left: 50px;
+    }
+
+    .livro-text h3{
+        font-size: 13px;
+    }
+
+    .livro-text{
+        padding: 40px;
+        display: block;
+    }
+
+    .livro-text h3{
+       margin-left: -7px;
+    }
+
+    .livro-text p{
+        width: 250px;
+        margin-left: -20px;
+    }
+
+    .livro-text h2{
+        margin-left: -20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* inicio footer */
+.log{
+    margin-left: 45px;
+}
+
+.logoimg3{
+    width: 50px;
+    height: 40px;
+   position: absolute;
+    top: 787%;
+    left: 18%;
+}
+
+.logoimg4{
+    z-index: 99;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 780%;
+    left: 60%;
+}
+
+.poli2{
+    margin-left: 40px;
+   
+    font-size: 130%;
+    font-family: titulo;
+    max-width: 220px;
+}
+
+.rodape{
+    border-top: #89BC42 solid 5px;
+    background-color: #73482F;
+    color: #ffffff;
+    height: 390px;
+    width: 100%;
+    font-size: 14px;
+    font-family: texto;
+    margin-top: 150px;
+}
+
+.rodape a{
+    text-decoration: none;
+    font-family: titulo;
+    color: white;  
+}
+
+.rodape p{
+    margin-bottom: 5px;
+}
+
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+    margin-left: 60px;
+}
+
+    .rodape-div-3{
+        font-family: titulo;
+    }
+
+
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+}
+
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+
+.rodape-direitos{
+    width: calc(100% - 1px);
+    background-color: #4e2f1e ;
+    padding: 10px;
+    margin-left: 0%;
+    text-align: center;
+    margin-top: 45px;
+}
+
+
+.book{
+    font-family: logo;
+    font-size: 2.5em;
+    margin-top: 25px;
+    margin-left: 28px;
+}
+.sobref{
+    margin-top: 45px;
+    font-family: texto;
+    font-size: 14px;
+}
+
+.catalf{
+    margin-top: 75px;
+    font-family: texto;
+    font-size: 14px;
+}
+
+@media all and (max-width: 560px) {
+    .toggle-label:before{
+        right: 2px;
+    }
+    .card-livro{
+        height: 480px;
+    }
+
+    .card-livro{
+        margin-left: 35px;
+    }
+    .card-livro{
+        width: calc(100% - 90px);
+        padding: 10px;
+    }
+
+    .livro-text img{
+        margin-top: 10px;
+        height: 180px;
+        width: 120px;
+    }
+
+    .livro-text h3{
+        margin-left: 0;
+        text-align: left;
+        font-size: 25px;
+        max-width: 100%;
+    }
+
+    .livro-text{
+        margin-left: 20px;
+        padding: 0;
+        display: block;
+    }
+
+    .livro-text p{
+        width: 350px;
+        margin-top: -16px;
+        margin-left: -5px;
+    }
+
+    .livro-text h2{
+        margin-left: 10px;
+    }
+    .logoimg2{
+        left: 5%;
+        top: 200%;
+        top: -100px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    } 
+    .logoimg3{
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        
+    }
+     
+    .logoimg4{
+        top: 100%;
+        left: 5%;
+    }
+    .sup{
+        font-size: 1.2em;
+        left: 45%;
+        top: 42%; 
+        font-family: texto; 
+    }
+
+    .bosque{
+        font-size: 17px;
+        left: 60%;
+        top: 77%;
+        font-family: texto;
+    }
+
+    .catal{
+        left: 79%;
+        font-size: 17px;
+        top: 77%;
+        font-family: texto;
+    }
+
+    .sobre{
+        font-size: 17px;
+        top: 77%;
+        left: 34%;
+        font-family: texto;
+    }
+
+    .inicio{
+        font-size: 17px;
+        top: 77%;
+        left: 19%;
+        font-family: texto;
+    }
+
+    header{
+        height: 60px;
+    }
+
+    h1{
+        z-index: 110;
+        font-size: 2em;
+        top: -52%;
+        background-size: 90px;
+        left: -3%;
+        background-position:  17px 28px;
+        padding: 10%;
+        padding-top: 15%;
+        font-family: logo;
+    }
+}
+/* Final do Mobile do Site. */
+
+/*mobile*/
+@media (max-width: 560px) {
+    .sobref{
+     font-size: 14px;
+     top: 15px;
+ 
+    }
+
+    .catalf{
+     font-size: 14px;
+    }
+
+    .inicio{
+     font-size: 12px;
+    }
+
+ .book{
+     margin-top: -27%;
+     margin-left: -20%;
+     font-family: logo;
+     
+ }
+
+ .rodape-div-2{
+     margin-top: 55%;
+     margin-left: -93%;
+     font-size: 1.1em;
+     font-family: titulo;
+     
+ }
+
+ .rodape-div-3{
+     margin-top: 10%;
+     margin-left: 6%;
+     font-size: 1.1em;
+ }
+ .poli2{
+     margin-left: 15px;
+     margin-top: 195px;
+ }
+ .rodape-div-4-coluna{
+     margin-left: -45px;
+     margin-top: 50px;
+ }
+
+
+ .logoimg3{
+    width: 50px;
+    height: 40px;
+   position: absolute;
+    top: 676%;
+    left: 41%;
+     
+ }
+ .logoimg4{
+     position: absolute;
+     top: 0;
+     margin-left: 22%;
+ }
+
+ .rodape-div-4{
+     margin-top: 0%;
+     margin-left: 4%;
+     font-size: 1.1em;
+ }
+ .rodape-div-3{
+     margin-left: 12%;
+     margin-top: 70%;
+     font-family: titulo;
+ }
+ .rodape-div-3-coluna{
+     
+     margin-left: -195px;
+     margin-top: -250px;
+ }
+ .inicis{
+     margin-right: 150px;
+ }
+ 
+ 
+
+ .desen{
+     font-size: 75%;
+     margin-left: 23px;
+     }
+
+ .rodape-div{
+     padding: 60px 0px 40px 0px;
+     margin-top: 1%;
+ }
+
+ .rodape{
+     margin-top: 20%;
+     height: 635px;
+ }
+
+ .rodape-direitos{
+     margin-top: 0%;
+ }
+
+ .rodape .card-livro {
+     font-family: 20px;
+ }
+ 
+ /* final do mobile do footer */
+
+}   
+
